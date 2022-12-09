@@ -1,0 +1,83 @@
+body{
+    background-image: url(kepek/hatter.jpg);
+}
+main{
+    margin: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas: 
+    "he he he"
+    "na ar as"
+    "fo fo fo"
+    ;
+}
+header{
+    background-image: url(kepek/fejlec.jpg);
+    text-align: center;
+    grid-area: he;
+    padding-top: 30px;
+    color: white;
+}
+nav{
+
+    background-color: white;
+    grid-area: na;
+}
+article{
+    background-color: white;
+    grid-area: ar;
+}
+aside{
+    background-color: white;
+    grid-area: as;
+    border: 1px solid blue;
+}
+footer{
+    background-color: blue;
+    text-align: center;
+    grid-area: fo;
+}
+th, td{
+    border-bottom: 1px solid blue;
+}
+tbody tr:nth-child(even){
+    background-color: lightblue;
+}
+thead tr:nth-child(odd){
+    background-color: lightblue;
+}
+ul{
+    list-style-type: none;
+    padding-bottom: 100px;
+}
+nav a{
+    text-align: center;
+    display: block;
+    border: 1px, solid, blue;
+    background-color: blue;
+    border-radius: 5px;
+    color:white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+#bal{
+    padding-left: 20px;
+}
+article a{
+    color: red;
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "he "
+      "na "
+      "ar "
+      "as "
+      "fo "
+      ;
+    }
+}
